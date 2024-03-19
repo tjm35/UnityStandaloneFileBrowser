@@ -4,8 +4,14 @@ using System;
 using System.IO;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+#if UNITY_2023_2
+using VistaOpenFileDialog = System.Windows.Forms.OpenFileDialog;
+using VistaFolderBrowserDialog = System.Windows.Forms.FolderBrowserDialog;
+using VistaSaveFileDialog = System.Windows.Forms.SaveFileDialog;
+#else
 using Ookii.Dialogs;
-
+#endif
+    
 namespace SFB {
     // For fullscreen support
     // - WindowWrapper class and GetActiveWindow() are required for modal file dialog.
