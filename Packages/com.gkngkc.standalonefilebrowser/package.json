@@ -1,0 +1,7 @@
+{
+  "name": "com.gkngkc.standalonefilebrowser",
+  "version": "1.0.0",
+  "displayName": "Standalone File Browser",
+  "description": "A simple wrapper for native file dialogs on Windows/Mac/Linux.",
+  "unity": "2018.2"
+}
